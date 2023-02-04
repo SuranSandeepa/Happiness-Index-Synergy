@@ -72,8 +72,11 @@
     <Content Include="Bootstrap\JS\bootstrap.min.js" />
     <Content Include="Bootstrap\JS\jquery-3.2.1.slim.min.js" />
     <Content Include="Bootstrap\JS\popper.min.js" />
+    <Content Include="DashboardPage.aspx" />
+    <Content Include="QuestionsPage.aspx" />
     <Content Include="Images\h2.png" />
-    <Content Include="QuestionForm.aspx" />
+    <Content Include="Employees\QuestionForm.aspx" />
+    <Content Include="Images\Logo_of_MAS_Holdings.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -84,16 +87,38 @@
     <Compile Include="Admin\LoginPage.aspx.designer.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DashboardPage.aspx.cs">
+      <DependentUpon>DashboardPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashboardPage.aspx.designer.cs">
+      <DependentUpon>DashboardPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QuestionsPage.aspx.cs">
+      <DependentUpon>QuestionsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuestionsPage.aspx.designer.cs">
+      <DependentUpon>QuestionsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationBar.Master.cs">
+      <DependentUpon>NavigationBar.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NavigationBar.Master.designer.cs">
+      <DependentUpon>NavigationBar.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuestionForm.aspx.cs">
+    <Compile Include="Employees\QuestionForm.aspx.cs">
       <DependentUpon>QuestionForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="QuestionForm.aspx.designer.cs">
+    <Compile Include="Employees\QuestionForm.aspx.designer.cs">
       <DependentUpon>QuestionForm.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="NavigationBar.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
