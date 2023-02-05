@@ -11,13 +11,13 @@
         <div class="row g-2">
             <div class="col-md">
                 <div class="form-floating">
-                    <input type="email" class="form-control border-info" id="floatingInputGri" placeholder="name@example.com" runat="server" />
+                    <input type="email" class="form-control border-info" id="qEPF" placeholder="name@example.com" runat="server" />
                     <label for="floatingInputGri">EPF අංකය</label>
                 </div>
             </div>
             <div class="col-md">
                 <div class="form-floating">
-                    <input type="email" class="form-control border-info" id="floatingInputGrid" placeholder="name@example.com" runat="server" />
+                    <input type="email" class="form-control border-info" id="qNAME" placeholder="name@example.com" runat="server" />
                     <label for="floatingInputGrid">ඔබගේ නම</label>
                 </div>
             </div>

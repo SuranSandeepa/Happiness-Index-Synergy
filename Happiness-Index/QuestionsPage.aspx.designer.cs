@@ -15,22 +15,22 @@ namespace Happiness_Index.Employees
     {
 
         /// <summary>
-        /// floatingInputGri control.
+        /// qEPF control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl floatingInputGri;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl qEPF;
 
         /// <summary>
-        /// floatingInputGrid control.
+        /// qNAME control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl floatingInputGrid;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl qNAME;
 
         /// <summary>
         /// rbQ1Excellent control.
