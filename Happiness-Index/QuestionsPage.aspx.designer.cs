@@ -51,15 +51,6 @@ namespace Happiness_Index.Employees
         protected global::System.Web.UI.WebControls.RadioButton rbQ1Good;
 
         /// <summary>
-        /// rbQ1Normal control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rbQ1Normal;
-
-        /// <summary>
         /// rbQ1Neutral control.
         /// </summary>
         /// <remarks>
@@ -76,6 +67,15 @@ namespace Happiness_Index.Employees
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButton rbQ1Poor;
+
+        /// <summary>
+        /// rbQ1Disappointed control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton rbQ1Disappointed;
 
         /// <summary>
         /// rbQ2Excellent control.
@@ -96,15 +96,6 @@ namespace Happiness_Index.Employees
         protected global::System.Web.UI.WebControls.RadioButton rbQ2Good;
 
         /// <summary>
-        /// rbQ2Normal control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rbQ2Normal;
-
-        /// <summary>
         /// rbQ2Neutral control.
         /// </summary>
         /// <remarks>
@@ -121,6 +112,15 @@ namespace Happiness_Index.Employees
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButton rbQ2Poor;
+
+        /// <summary>
+        /// rbQ2Disappointed control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton rbQ2Disappointed;
 
         /// <summary>
         /// rbQ3Excellent control.
@@ -141,15 +141,6 @@ namespace Happiness_Index.Employees
         protected global::System.Web.UI.WebControls.RadioButton rbQ3Good;
 
         /// <summary>
-        /// rbQ3Normal control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rbQ3Normal;
-
-        /// <summary>
         /// rbQ3Neutral control.
         /// </summary>
         /// <remarks>
@@ -166,6 +157,15 @@ namespace Happiness_Index.Employees
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButton rbQ3Poor;
+
+        /// <summary>
+        /// rbQ3Disappointed control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton rbQ3Disappointed;
 
         /// <summary>
         /// rbQ4Excellent control.
@@ -186,15 +186,6 @@ namespace Happiness_Index.Employees
         protected global::System.Web.UI.WebControls.RadioButton rbQ4Good;
 
         /// <summary>
-        /// rbQ4Normal control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rbQ4Normal;
-
-        /// <summary>
         /// rbQ4Neutral control.
         /// </summary>
         /// <remarks>
@@ -211,6 +202,15 @@ namespace Happiness_Index.Employees
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButton rbQ4Poor;
+
+        /// <summary>
+        /// rbQ4Disappointed control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton rbQ4Disappointed;
 
         /// <summary>
         /// rbQ5Excellent control.
@@ -231,15 +231,6 @@ namespace Happiness_Index.Employees
         protected global::System.Web.UI.WebControls.RadioButton rbQ5Good;
 
         /// <summary>
-        /// rbQ5Normal control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rbQ5Normal;
-
-        /// <summary>
         /// rbQ5Neutral control.
         /// </summary>
         /// <remarks>
@@ -256,6 +247,15 @@ namespace Happiness_Index.Employees
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButton rbQ5Poor;
+
+        /// <summary>
+        /// rbQ5Disappointed control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton rbQ5Disappointed;
 
         /// <summary>
         /// rbQ6Excellent control.
@@ -276,15 +276,6 @@ namespace Happiness_Index.Employees
         protected global::System.Web.UI.WebControls.RadioButton rbQ6Good;
 
         /// <summary>
-        /// rbQ6Normal control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rbQ6Normal;
-
-        /// <summary>
         /// rbQ6Neutral control.
         /// </summary>
         /// <remarks>
@@ -301,6 +292,15 @@ namespace Happiness_Index.Employees
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButton rbQ6Poor;
+
+        /// <summary>
+        /// rbQ6Disappointed control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton rbQ6Disappointed;
 
         /// <summary>
         /// rbQ7Excellent control.
