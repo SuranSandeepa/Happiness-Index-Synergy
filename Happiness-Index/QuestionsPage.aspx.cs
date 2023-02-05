@@ -341,11 +341,281 @@ namespace Happiness_Index.Employees
             }
             else if (rbQ15Neutral.Checked)
             {
-                q3 = "Poor";
+                q15 = "Poor";
             }
             else
             {
-                q3 = "Disappointed";
+                q15 = "Disappointed";
+            }
+
+
+            //question 16
+            if (rbQ16Excellent.Checked)
+            {
+                q16 = "Excellent";
+            }
+            else if (rbQ16Good.Checked)
+            {
+                q16 = "Good";
+            }
+            else if (rbQ16Normal.Checked)
+            {
+                q16 = "Neutral";
+            }
+            else if (rbQ16Neutral.Checked)
+            {
+                q16 = "Poor";
+            }
+            else
+            {
+                q16 = "Disappointed";
+            }
+
+            //question 17
+            if (rbQ17Excellent.Checked)
+            {
+                q17 = "Excellent";
+            }
+            else if (rbQ17Good.Checked)
+            {
+                q17 = "Good";
+            }
+            else if (rbQ17Normal.Checked)
+            {
+                q17 = "Neutral";
+            }
+            else if (rbQ17Neutral.Checked)
+            {
+                q17 = "Poor";
+            }
+            else
+            {
+                q17 = "Disappointed";
+            }
+
+            //question 18
+            if (rbQ18Excellent.Checked)
+            {
+                q18 = "Excellent";
+            }
+            else if (rbQ18Good.Checked)
+            {
+                q18 = "Good";
+            }
+            else if (rbQ18Normal.Checked)
+            {
+                q18 = "Neutral";
+            }
+            else if (rbQ18Neutral.Checked)
+            {
+                q18 = "Poor";
+            }
+            else
+            {
+                q18 = "Disappointed";
+            }
+
+
+            //question 19
+            if (rbQ19Excellent.Checked)
+            {
+                q19 = "Excellent";
+            }
+            else if (rbQ19Good.Checked)
+            {
+                q19 = "Good";
+            }
+            else if (rbQ19Normal.Checked)
+            {
+                q19 = "Neutral";
+            }
+            else if (rbQ19Neutral.Checked)
+            {
+                q19 = "Poor";
+            }
+            else
+            {
+                q19 = "Disappointed";
+            }
+
+            //question 20
+            if (rbQ20Excellent.Checked)
+            {
+                q20 = "Excellent";
+            }
+            else if (rbQ20Good.Checked)
+            {
+                q20 = "Good";
+            }
+            else if (rbQ20Normal.Checked)
+            {
+                q20 = "Neutral";
+            }
+            else if (rbQ20Neutral.Checked)
+            {
+                q20 = "Poor";
+            }
+            else
+            {
+                q20 = "Disappointed";
+            }
+
+            //question 21
+            if (rbQ21Excellent.Checked)
+            {
+                q21 = "Excellent";
+            }
+            else if (rbQ21Good.Checked)
+            {
+                q21 = "Good";
+            }
+            else if (rbQ21Normal.Checked)
+            {
+                q21 = "Neutral";
+            }
+            else if (rbQ21Neutral.Checked)
+            {
+                q21 = "Poor";
+            }
+            else
+            {
+                q21 = "Disappointed";
+            }
+
+            //question 22
+            if (rbQ22Excellent.Checked)
+            {
+                q22 = "Excellent";
+            }
+            else if (rbQ22Good.Checked)
+            {
+                q22 = "Good";
+            }
+            else if (rbQ22Normal.Checked)
+            {
+                q22 = "Neutral";
+            }
+            else if (rbQ22Neutral.Checked)
+            {
+                q22 = "Poor";
+            }
+            else
+            {
+                q22 = "Disappointed";
+            }
+
+
+            //question 23
+            if (rbQ23Excellent.Checked)
+            {
+                q23 = "Excellent";
+            }
+            else if (rbQ23Good.Checked)
+            {
+                q23 = "Good";
+            }
+            else if (rbQ23Normal.Checked)
+            {
+                q23 = "Neutral";
+            }
+            else if (rbQ23Neutral.Checked)
+            {
+                q23 = "Poor";
+            }
+            else
+            {
+                q23 = "Disappointed";
+            }
+
+
+            //question 24
+            if (rbQ24Excellent.Checked)
+            {
+                q24 = "Excellent";
+            }
+            else if (rbQ24Good.Checked)
+            {
+                q24 = "Good";
+            }
+            else if (rbQ24Normal.Checked)
+            {
+                q24 = "Neutral";
+            }
+            else if (rbQ24Neutral.Checked)
+            {
+                q24 = "Poor";
+            }
+            else
+            {
+                q24 = "Disappointed";
+            }
+
+
+            //question 25
+            if (rbQ25Excellent.Checked)
+            {
+                q25 = "Excellent";
+            }
+            else if (rbQ25Good.Checked)
+            {
+                q25 = "Good";
+            }
+            else if (rbQ25Normal.Checked)
+            {
+                q25 = "Neutral";
+            }
+            else if (rbQ25Neutral.Checked)
+            {
+                q25 = "Poor";
+            }
+            else
+            {
+                q25 = "Disappointed";
+            }
+
+
+            //question 26
+            if (rbQ26Excellent.Checked)
+            {
+                q26 = "Excellent";
+            }
+            else if (rbQ26Good.Checked)
+            {
+                q26 = "Good";
+            }
+            else if (rbQ26Normal.Checked)
+            {
+                q26 = "Neutral";
+            }
+            else if (rbQ26Neutral.Checked)
+            {
+                q26 = "Poor";
+            }
+            else
+            {
+                q26 = "Disappointed";
+            }
+
+            //question 27
+            if (rbQ27Excellent.Checked)
+            {
+                q27 = "Excellent";
+            }
+            else if (rbQ27Good.Checked)
+            {
+                q27 = "Good";
+            }
+            else if (rbQ27Normal.Checked)
+            {
+                q27 = "Neutral";
+            }
+            else if (rbQ27Neutral.Checked)
+            {
+                q27 = "Poor";
+            }
+            else
+            {
+                q27 = "Disappointed";
             }
         }
 
