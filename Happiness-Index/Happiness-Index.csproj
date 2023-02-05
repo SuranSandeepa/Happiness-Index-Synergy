@@ -93,6 +93,7 @@
     <Compile Include="DashboardPage.aspx.designer.cs">
       <DependentUpon>DashboardPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DBConnection.cs" />
     <Compile Include="QuestionsPage.aspx.cs">
       <DependentUpon>QuestionsPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
