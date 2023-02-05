@@ -634,6 +634,235 @@ namespace Happiness_Index.Employees
             }
             else
             {
+                using(SqlConnection connection = new SqlConnection(DBConnection.ConnectionString))
+                {
+                    connection.Open();
+                    using (SqlCommand cmd = new SqlCommand("INSERT INTO QuestionForm(qdate,qepf,qname,q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14,q15,q16,q17,q18,q19,q20,21,q22,q23,q24,q25,q26,q27) VALUES(@qdate, @qepf, @qname, @q1, @q2,@q3,@q4,@q5,@q6,@q7,@q8,@q9,@q10,@q11,@q12,@q13,@q14,@q15,@q16,@q17,@q18,@q19,@q20,@q21,@q22,@q23,@q24,@q25,@q26,@q27)", connection))
+                    {
+                        cmd.Parameters.AddWithValue("@qdate", DateTime.Now);
+                        cmd.Parameters.AddWithValue("@qepf", qEPF.Value);
+                        cmd.Parameters.AddWithValue("@qname", qNAME.Value);
+                        cmd.Parameters.AddWithValue("@q1", q1);
+                        cmd.Parameters.AddWithValue("@q2", q1);
+                        cmd.Parameters.AddWithValue("@q3", q1);
+                        cmd.Parameters.AddWithValue("@q4", q1);
+                        cmd.Parameters.AddWithValue("@q5", q1);
+                        cmd.Parameters.AddWithValue("@q6", q1);
+                        cmd.Parameters.AddWithValue("@q7", q1);
+                        cmd.Parameters.AddWithValue("@q8", q1);
+                        cmd.Parameters.AddWithValue("@q9", q1);
+                        cmd.Parameters.AddWithValue("@q10", q1);
+                        cmd.Parameters.AddWithValue("@q11", q1);
+                        cmd.Parameters.AddWithValue("@q12", q1);
+                        cmd.Parameters.AddWithValue("@q13", q1);
+                        cmd.Parameters.AddWithValue("@q14", q1);
+                        cmd.Parameters.AddWithValue("@q15", q1);
+                        cmd.Parameters.AddWithValue("@q16", q1);
+                        cmd.Parameters.AddWithValue("@q17", q1);
+                        cmd.Parameters.AddWithValue("@q18", q1);
+                        cmd.Parameters.AddWithValue("@q19", q1);
+                        cmd.Parameters.AddWithValue("@q20", q1);
+                        cmd.Parameters.AddWithValue("@q21", q1);
+                        cmd.Parameters.AddWithValue("@q22", q1);
+                        cmd.Parameters.AddWithValue("@q23", q1);
+                        cmd.Parameters.AddWithValue("@q24", q1);
+                        cmd.Parameters.AddWithValue("@q25", q1);
+                        cmd.Parameters.AddWithValue("@q26", q1);
+                        cmd.Parameters.AddWithValue("@q27", q1);
+                    }
+                    connection.Close();
+                }
+                //Alert
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('දත්ත ගබඩා විය,ස්තූතියි.');", true);
+
+                //Question 01
+                rbQ1Excellent.Checked = false;
+                rbQ1Good.Checked = false;
+                rbQ1Neutral.Checked = false;
+                rbQ1Normal.Checked = false;
+                rbQ1Poor.Checked = false;
+
+                //Question 02
+                rbQ2Excellent.Checked = false;
+                rbQ2Good.Checked = false;
+                rbQ2Neutral.Checked = false;
+                rbQ2Normal.Checked = false;
+                rbQ2Poor.Checked = false;
+
+                //Question 03
+                rbQ3Excellent.Checked = false;
+                rbQ3Good.Checked = false;
+                rbQ3Neutral.Checked = false;
+                rbQ3Normal.Checked = false;
+                rbQ3Poor.Checked = false;
+
+                //Question 04
+                rbQ4Excellent.Checked = false;
+                rbQ4Good.Checked = false;
+                rbQ4Neutral.Checked = false;
+                rbQ4Normal.Checked = false;
+                rbQ4Poor.Checked = false;
+
+                //Question 05
+                rbQ5Excellent.Checked = false;
+                rbQ5Good.Checked = false;
+                rbQ5Neutral.Checked = false;
+                rbQ5Normal.Checked = false;
+                rbQ5Poor.Checked = false;
+
+                //Question 06
+                rbQ6Excellent.Checked = false;
+                rbQ6Good.Checked = false;
+                rbQ6Neutral.Checked = false;
+                rbQ6Normal.Checked = false;
+                rbQ6Poor.Checked = false;
+
+                //Question 07
+                rbQ7Excellent.Checked = false;
+                rbQ7Good.Checked = false;
+                rbQ7Neutral.Checked = false;
+                rbQ7Normal.Checked = false;
+                rbQ7Poor.Checked = false;
+
+                //Question 08
+                rbQ8Excellent.Checked = false;
+                rbQ8Good.Checked = false;
+                rbQ8Neutral.Checked = false;
+                rbQ8Normal.Checked = false;
+                rbQ8Poor.Checked = false;
+
+                //Question 09
+                rbQ9Excellent.Checked = false;
+                rbQ9Good.Checked = false;
+                rbQ9Neutral.Checked = false;
+                rbQ9Normal.Checked = false;
+                rbQ9Poor.Checked = false;
+
+                //Question 10
+                rbQ10Excellent.Checked = false;
+                rbQ10Good.Checked = false;
+                rbQ10Neutral.Checked = false;
+                rbQ10Normal.Checked = false;
+                rbQ10Poor.Checked = false;
+
+                //Question 11
+                rbQ11Excellent.Checked = false;
+                rbQ11Good.Checked = false;
+                rbQ11Neutral.Checked = false;
+                rbQ11Normal.Checked = false;
+                rbQ11Poor.Checked = false;
+
+                //Question 12
+                rbQ12Excellent.Checked = false;
+                rbQ12Good.Checked = false;
+                rbQ12Neutral.Checked = false;
+                rbQ12Normal.Checked = false;
+                rbQ12Poor.Checked = false;
+
+                //Question 13
+                rbQ13Excellent.Checked = false;
+                rbQ13Good.Checked = false;
+                rbQ13Neutral.Checked = false;
+                rbQ13Normal.Checked = false;
+                rbQ13Poor.Checked = false;
+
+                //Question 14
+                rbQ14Excellent.Checked = false;
+                rbQ14Good.Checked = false;
+                rbQ14Neutral.Checked = false;
+                rbQ14Normal.Checked = false;
+                rbQ14Poor.Checked = false;
+
+                //Question 15
+                rbQ15Excellent.Checked = false;
+                rbQ15Good.Checked = false;
+                rbQ15Neutral.Checked = false;
+                rbQ15Normal.Checked = false;
+                rbQ15Poor.Checked = false;
+
+                //Question 16
+                rbQ16Excellent.Checked = false;
+                rbQ16Good.Checked = false;
+                rbQ16Neutral.Checked = false;
+                rbQ16Normal.Checked = false;
+                rbQ16Poor.Checked = false;
+
+                //Question 17
+                rbQ17Excellent.Checked = false;
+                rbQ17Good.Checked = false;
+                rbQ17Neutral.Checked = false;
+                rbQ17Normal.Checked = false;
+                rbQ17Poor.Checked = false;
+
+                //Question 18
+                rbQ18Excellent.Checked = false;
+                rbQ18Good.Checked = false;
+                rbQ18Neutral.Checked = false;
+                rbQ18Normal.Checked = false;
+                rbQ18Poor.Checked = false;
+
+                //Question 19
+                rbQ19Excellent.Checked = false;
+                rbQ19Good.Checked = false;
+                rbQ19Neutral.Checked = false;
+                rbQ19Normal.Checked = false;
+                rbQ19Poor.Checked = false;
+
+                //Question 20
+                rbQ20Excellent.Checked = false;
+                rbQ20Good.Checked = false;
+                rbQ20Neutral.Checked = false;
+                rbQ20Normal.Checked = false;
+                rbQ20Poor.Checked = false;
+
+                //Question 21
+                rbQ21Excellent.Checked = false;
+                rbQ21Good.Checked = false;
+                rbQ21Neutral.Checked = false;
+                rbQ21Normal.Checked = false;
+                rbQ21Poor.Checked = false;
+
+                //Question 22
+                rbQ22Excellent.Checked = false;
+                rbQ22Good.Checked = false;
+                rbQ22Neutral.Checked = false;
+                rbQ22Normal.Checked = false;
+                rbQ22Poor.Checked = false;
+
+                //Question 23
+                rbQ23Excellent.Checked = false;
+                rbQ23Good.Checked = false;
+                rbQ23Neutral.Checked = false;
+                rbQ23Normal.Checked = false;
+                rbQ23Poor.Checked = false;
+
+                //Question 24
+                rbQ24Excellent.Checked = false;
+                rbQ24Good.Checked = false;
+                rbQ24Neutral.Checked = false;
+                rbQ24Normal.Checked = false;
+                rbQ24Poor.Checked = false;
+
+                //Question 25
+                rbQ25Excellent.Checked = false;
+                rbQ25Good.Checked = false;
+                rbQ25Neutral.Checked = false;
+                rbQ25Normal.Checked = false;
+                rbQ25Poor.Checked = false;
+
+                //Question 26
+                rbQ26Excellent.Checked = false;
+                rbQ26Good.Checked = false;
+                rbQ26Neutral.Checked = false;
+                rbQ26Normal.Checked = false;
+                rbQ26Poor.Checked = false;
+
+                //Question 27
+                rbQ27Excellent.Checked = false;
+                rbQ27Good.Checked = false;
+                rbQ27Neutral.Checked = false;
+                rbQ27Normal.Checked = false;
+                rbQ27Poor.Checked = false;
             }
         }
 
