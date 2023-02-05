@@ -4,13 +4,18 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.IO;
+using System.Data;
+using System.Data.OleDb;
+using System.Data.Sql;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace Happiness_Index.Employees
 {
     public partial class QuestionsPage : System.Web.UI.Page
     {
-        string q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14, q15, q16, q17, q18, q19, q20, q21, q22, q23,
-            q24, q25, q26, q27 = "";
+
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -19,6 +24,9 @@ namespace Happiness_Index.Employees
 
         protected void save_Click(object sender, EventArgs e)
         {
+            string q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14, q15, q16, q17, q18, q19, q20, q21, q22, q23,
+                   q24, q25, q26, q27 = "";
+
             //question 01
             if (rbQ1Excellent.Checked)
             {
@@ -619,8 +627,14 @@ namespace Happiness_Index.Employees
                 q27 = "Disappointed";
             }
 
-
-
+            if(qEPF.Value == string.Empty ||qNAME.Value == string.Empty)
+            {
+                //Alert
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('සෑම අන්ශයක්ම පුරවන්න!!');", true);
+            }
+            else
+            {
+            }
         }
 
     }
