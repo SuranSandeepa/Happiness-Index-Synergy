@@ -11,13 +11,13 @@
         <div class="row g-2">
             <div class="col-md">
                 <div class="form-floating">
-                    <input type="email" class="form-control border-info" id="qEPF" placeholder="eg:12345" runat="server" />
+                    <input class="form-control border-info" type="text" id="qEPF" placeholder="121311" runat="server">
                     <label for="qEPF">EPF අංකය</label>
                 </div>
             </div>
             <div class="col-md">
                 <div class="form-floating">
-                    <input type="text" class="form-control border-info" id="qNAME" placeholder="Suran" runat="server" />
+                    <input class="form-control border-info" type="text" id="qNAME" placeholder="Suran" runat="server">
                     <label for="qNAME">ඔබගේ නම</label>
                 </div>
             </div>
@@ -382,7 +382,7 @@
 
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
             <asp:Button ID="save" class="btn btn-primary" runat="server" Text="Save" OnClick="save_Click" />
-            <asp:Button ID="cancel" class="btn btn-warning" runat="server" Text="Cancel" OnClick="cancel_Click" />
+            <asp:Button ID="cancel" class="btn btn-warning" runat="server" Text="Cancel" OnClick="cancel_Click"/>
         </div>
         <br />
         
