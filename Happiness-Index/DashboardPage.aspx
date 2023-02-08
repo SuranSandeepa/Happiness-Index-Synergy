@@ -7,6 +7,7 @@
             .col-sm {
                 width: 100% !important;
             }
+
         }
 
         .cardView {
