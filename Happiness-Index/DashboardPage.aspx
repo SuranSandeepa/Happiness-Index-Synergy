@@ -1,71 +1,231 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/NavigationBar.Master" AutoEventWireup="true" CodeBehind="DashboardPage.aspx.cs" Inherits="Happiness_Index.DashboardPage" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+    <style>
+        @media only screen and (max-width: 767px) {
+            .col-sm {
+                width: 100% !important;
+            }
+        }
+
+        .cardView{
+            background-color:#f5f5f5;
+            box-shadow:1px 1px 1px #888;
+        }
+
+        .cardView:hover{
+            background-color:skyblue;
+            color:white;
+            box-shadow:3px 3px 3px #888;
+            transition-duration: all 0.2s;
+        }
+    </style>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <br />
 
-    <asp:Label ID="Label1" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label2" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label3" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label4" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label5" runat="server" Text="0"></asp:Label>
 
-    <br />
+    <div class="container p-2">
+        <div class="row p-2 text-center">
+            <div class="col-sm">
+                <div class="card cardView">
+                    <div class="card-header">Question 1</div>
+                    <div class="card-body">Excellent &#128515; </div>
+                    <div class="card-footer">
+                        <asp:Label ID="l1q1e" runat="server" Text="0" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card cardView">
+                    <div class="card-header">Question 1</div>
+                    <div class="card-body">Good &#128515; </div>
+                    <div class="card-footer">
+                        <asp:Label ID="l1q1g" runat="server" Text="0" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card cardView">
+                    <div class="card-header">Question 1</div>
+                    <div class="card-body">Neutral &#128515; </div>
+                    <div class="card-footer">
+                        <asp:Label ID="l1q1n" runat="server" Text="0" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card cardView">
+                    <div class="card-header">Question 1</div>
+                    <div class="card-body">Poor &#128515; </div>
+                    <div class="card-footer">
+                        <asp:Label ID="l1q1p" runat="server" Text="0" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card cardView">
+                    <div class="card-header">Question 1</div>
+                    <div class="card-body">Disappointed &#128515; </div>
+                    <div class="card-footer">
+                        <asp:Label ID="l1q1d" runat="server" Text="0" />
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <asp:Label ID="Label6" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label7" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label8" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label9" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label10" runat="server" Text="0"></asp:Label>
+        <hr />
 
-    <br />
+        <div class="row p-2 text-center">
+            <div class="col-sm">
+                <div class="card cardView">
+                    <div class="card-header">Question 2</div>
+                    <div class="card-body">Excellent &#128515; </div>
+                    <div class="card-footer">
+                        <asp:Label ID="l1q2e" runat="server" Text="0" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card cardView">
+                    <div class="card-header">Question 2</div>
+                    <div class="card-body">Good &#128515; </div>
+                    <div class="card-footer">
+                        <asp:Label ID="l1q2g" runat="server" Text="0" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card cardView">
+                    <div class="card-header">Question 2</div>
+                    <div class="card-body">Neutral &#128515; </div>
+                    <div class="card-footer">
+                        <asp:Label ID="l1q2n" runat="server" Text="0" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card cardView">
+                    <div class="card-header">Question 2</div>
+                    <div class="card-body">Poor &#128515; </div>
+                    <div class="card-footer">
+                        <asp:Label ID="l1q2p" runat="server" Text="0" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card cardView">
+                    <div class="card-header">Question 2</div>
+                    <div class="card-body">Disappointed &#128515; </div>
+                    <div class="card-footer">
+                        <asp:Label ID="l1q2d" runat="server" Text="0" />
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <asp:Label ID="Label11" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label12" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label13" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label14" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label15" runat="server" Text="0"></asp:Label>
+        <hr />
 
-    <br />
+        <div class="row p-2 text-center">
+            <div class="col-sm">
+                <div class="card cardView">
+                    <div class="card-header">Question 3</div>
+                    <div class="card-body">Excellent &#128515; </div>
+                    <div class="card-footer">
+                        <asp:Label ID="l1q3e" runat="server" Text="0" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card cardView">
+                    <div class="card-header">Question 3</div>
+                    <div class="card-body">Good &#128515; </div>
+                    <div class="card-footer">
+                        <asp:Label ID="l1q3g" runat="server" Text="0" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card cardView">
+                    <div class="card-header">Question 3</div>
+                    <div class="card-body">Neutral &#128515; </div>
+                    <div class="card-footer">
+                        <asp:Label ID="l1q3n" runat="server" Text="0" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card cardView">
+                    <div class="card-header">Question 3</div>
+                    <div class="card-body">Poor &#128515; </div>
+                    <div class="card-footer">
+                        <asp:Label ID="l1q3p" runat="server" Text="0" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card cardView">
+                    <div class="card-header">Question 3</div>
+                    <div class="card-body">Disappointed &#128515; </div>
+                    <div class="card-footer">
+                        <asp:Label ID="l1q3d" runat="server" Text="0" />
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <asp:Label ID="Label16" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label17" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label18" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label19" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label20" runat="server" Text="0"></asp:Label>
+        <hr />
 
-    <br />
-
-    <asp:Label ID="Label21" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label22" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label23" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label24" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label25" runat="server" Text="0"></asp:Label>
-
-    <br />
-
-    <asp:Label ID="Label26" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label27" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label28" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label29" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label30" runat="server" Text="0"></asp:Label>
-
-    <br />
-
-    <asp:Label ID="Label31" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label32" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label33" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label34" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label35" runat="server" Text="0"></asp:Label>
-
-    <br />
-
-    <asp:Label ID="Label36" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label37" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label38" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label39" runat="server" Text="0"></asp:Label>
-    <asp:Label ID="Label40" runat="server" Text="0"></asp:Label>
+        <div class="row p-2 text-center">
+            <div class="col-sm">
+                <div class="card cardView">
+                    <div class="card-header">Question 4</div>
+                    <div class="card-body">Excellent &#128515; </div>
+                    <div class="card-footer">
+                        <asp:Label ID="l1q4e" runat="server" Text="0" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card cardView">
+                    <div class="card-header">Question 4</div>
+                    <div class="card-body">Good &#128515; </div>
+                    <div class="card-footer">
+                        <asp:Label ID="l1q4g" runat="server" Text="0" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card cardView">
+                    <div class="card-header">Question 4</div>
+                    <div class="card-body">Neutral &#128515; </div>
+                    <div class="card-footer">
+                        <asp:Label ID="l1q4n" runat="server" Text="0" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card cardView">
+                    <div class="card-header">Question 4</div>
+                    <div class="card-body">Poor &#128515; </div>
+                    <div class="card-footer">
+                        <asp:Label ID="l1q4p" runat="server" Text="0" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card cardView">
+                    <div class="card-header">Question 4</div>
+                    <div class="card-body">Disappointed &#128515; </div>
+                    <div class="card-footer">
+                        <asp:Label ID="l1q4d" runat="server" Text="0" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </asp:Content>

@@ -57,7 +57,7 @@ namespace Happiness_Index
                     q1Excellent = (decimal)command.ExecuteScalar();
 
                     // Output the result
-                    Label1.Text = "Question 1 Excellent &#128515; : " + q1Excellent;
+                    l1q1e.Text = q1Excellent.ToString("0.0") + "%";
                 }
                 // Execute the SQL query
                 using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q1) AS Goods FROM QuestionForm WHERE q1 = 'Good'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Goods * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
@@ -65,7 +65,7 @@ namespace Happiness_Index
                     q1Good = (decimal)command.ExecuteScalar();
 
                     // Output the result
-                    Label2.Text = "Question 1 Good &#128515; : " + q1Good;
+                    l1q1g.Text = q1Good.ToString("0.0") + "%"; ;
                 }
                 // Execute the SQL query
                 using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q1) AS Neutrals FROM QuestionForm WHERE q1 = 'Neutral'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Neutrals * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
@@ -73,7 +73,7 @@ namespace Happiness_Index
                     q1Neutral = (decimal)command.ExecuteScalar();
 
                     // Output the result
-                    Label3.Text = "Question 1 Neutral &#128515; : " + q1Neutral;
+                    l1q1n.Text = q1Neutral.ToString("0.0") + "%"; ;
                 }
                 // Execute the SQL query
                 using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q1) AS Poors FROM QuestionForm WHERE q1 = 'Poor'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Poors * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
@@ -81,14 +81,14 @@ namespace Happiness_Index
                     q1Poor = (decimal)command.ExecuteScalar();
 
                     // Output the result
-                    Label4.Text = "Question 1 Poor &#128515; : " + q1Poor;
+                    l1q1p.Text = q1Poor.ToString("0.0") + "%"; ;
                 }
                 using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q1) AS Disappointeds FROM QuestionForm WHERE q1 = 'Disappointed'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Disappointeds * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
                 {
                     q1Disappointed = (decimal)command.ExecuteScalar();
 
                     // Output the result
-                    Label5.Text = "Question 1 Disappointed &#128515; : " + q1Disappointed;
+                    l1q1d.Text = q1Disappointed.ToString("0.0") + "%";
                 }
 
 
@@ -100,7 +100,7 @@ namespace Happiness_Index
                     q2Excellent = (decimal)command.ExecuteScalar();
 
                     // Output the result
-                    Label6.Text = "Question 2 Excellent &#128515; : " + q2Excellent;
+                    l1q2e.Text = q2Excellent.ToString("0.0") + "%";
                 }
                 // Execute the SQL query
                 using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q2) AS Goods FROM QuestionForm WHERE q2 = 'Good'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Goods * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
@@ -108,7 +108,7 @@ namespace Happiness_Index
                     q2Good = (decimal)command.ExecuteScalar();
 
                     // Output the result
-                    Label7.Text = "Question 2 Good &#128515; : " + q2Good;
+                    l1q2g.Text = q2Good.ToString("0.0") + "%";
                 }
                 // Execute the SQL query
                 using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q2) AS Neutrals FROM QuestionForm WHERE q2 = 'Neutral'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Neutrals * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
@@ -116,7 +116,7 @@ namespace Happiness_Index
                     q2Neutral = (decimal)command.ExecuteScalar();
 
                     // Output the result
-                    Label8.Text = "Question 2 Neutral &#128515; : " + q2Neutral;
+                    l1q2n.Text = q2Neutral.ToString("0.0") + "%";
                 }
                 // Execute the SQL query
                 using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q2) AS Poors FROM QuestionForm WHERE q2 = 'Poor'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Poors * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
@@ -124,14 +124,14 @@ namespace Happiness_Index
                     q2Poor = (decimal)command.ExecuteScalar();
 
                     // Output the result
-                    Label9.Text = "Question 2 Poor &#128515; : " + q2Poor;
+                    l1q2p.Text = q2Poor.ToString("0.0") + "%";
                 }
                 using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q2) AS Disappointeds FROM QuestionForm WHERE q2 = 'Disappointed'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Disappointeds * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
                 {
                     q2Disappointed = (decimal)command.ExecuteScalar();
 
                     // Output the result
-                    Label10.Text = "Question 2 Disappointed &#128515; : " + q2Disappointed;
+                    l1q2d.Text = q2Disappointed.ToString("0.0") + "%";
                 }
 
 
@@ -143,7 +143,7 @@ namespace Happiness_Index
                     q3Excellent = (decimal)command.ExecuteScalar();
 
                     // Output the result
-                    Label11.Text = "Question 3 Excellent &#128515; : " + q3Excellent;
+                    l1q3e.Text = q3Excellent.ToString("0.0") + "%";
                 }
                 // Execute the SQL query
                 using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q3) AS Goods FROM QuestionForm WHERE q3 = 'Good'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Goods * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
@@ -151,7 +151,7 @@ namespace Happiness_Index
                     q3Good = (decimal)command.ExecuteScalar();
 
                     // Output the result
-                    Label12.Text = "Question 3 Good &#128515; : " + q3Good;
+                    l1q3g.Text = q3Good.ToString("0.0") + "%";
                 }
                 // Execute the SQL query
                 using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q3) AS Neutrals FROM QuestionForm WHERE q3 = 'Neutral'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Neutrals * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
@@ -159,7 +159,7 @@ namespace Happiness_Index
                     q3Neutral = (decimal)command.ExecuteScalar();
 
                     // Output the result
-                    Label13.Text = "Question 3 Neutral &#128515; : " + q3Neutral;
+                    l1q3n.Text = q3Neutral.ToString("0.0") + "%";
                 }
                 // Execute the SQL query
                 using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q3) AS Poors FROM QuestionForm WHERE q3 = 'Poor'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Poors * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
@@ -167,14 +167,14 @@ namespace Happiness_Index
                     q3Poor = (decimal)command.ExecuteScalar();
 
                     // Output the result
-                    Label14.Text = "Question 3 Poor &#128515; : " + q3Poor;
+                    l1q3p.Text = q3Poor.ToString("0.0") + "%";
                 }
                 using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q3) AS Disappointeds FROM QuestionForm WHERE q3 = 'Disappointed'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Disappointeds * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
                 {
                     q3Disappointed = (decimal)command.ExecuteScalar();
 
                     // Output the result
-                    Label15.Text = "Question 3 Disappointed &#128515; : " + q3Disappointed;
+                    l1q3d.Text = q3Disappointed.ToString("0.0") + "%";
                 }
 
 
@@ -186,7 +186,7 @@ namespace Happiness_Index
                     q4Excellent = (decimal)command.ExecuteScalar();
 
                     // Output the result
-                    Label16.Text = "Question 4 Excellent &#128515; : " + q4Excellent;
+                    l1q4e.Text = q4Excellent.ToString("0.0") + "%";
                 }
                 // Execute the SQL query
                 using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q4) AS Goods FROM QuestionForm WHERE q4 = 'Good'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Goods * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
@@ -194,7 +194,7 @@ namespace Happiness_Index
                     q4Good = (decimal)command.ExecuteScalar();
 
                     // Output the result
-                    Label17.Text = "Question 4 Good &#128515; : " + q4Good;
+                    l1q4g.Text = q4Good.ToString("0.0") + "%";
                 }
                 // Execute the SQL query
                 using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q4) AS Neutrals FROM QuestionForm WHERE q4 = 'Neutral'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Neutrals * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
@@ -202,7 +202,7 @@ namespace Happiness_Index
                     q4Neutral = (decimal)command.ExecuteScalar();
 
                     // Output the result
-                    Label18.Text = "Question 4 Neutral &#128515; : " + q4Neutral;
+                    l1q4n.Text = q4Neutral.ToString("0.0") + "%";
                 }
                 // Execute the SQL query
                 using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q4) AS Poors FROM QuestionForm WHERE q4 = 'Poor'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Poors * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
@@ -210,100 +210,698 @@ namespace Happiness_Index
                     q4Poor = (decimal)command.ExecuteScalar();
 
                     // Output the result
-                    Label19.Text = "Question 4 Poor &#128515; : " + q4Poor;
+                    l1q4p.Text = q4Poor.ToString("0.0") + "%";
                 }
                 using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q4) AS Disappointeds FROM QuestionForm WHERE q4 = 'Disappointed'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Disappointeds * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
                 {
                     q4Disappointed = (decimal)command.ExecuteScalar();
 
                     // Output the result
-                    Label20.Text = "Question 4 Disappointed &#128515; : " + q4Disappointed;
+                    l1q4d.Text = q4Disappointed.ToString("0.0") + "%";
                 }
 
-                //Question 5
+                ////Question 5
 
-                // Execute the SQL query
-                using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q5) AS Excellents FROM QuestionForm WHERE q5 = 'Excellent'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Excellents * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
-                {
-                    q5Excellent = (decimal)command.ExecuteScalar();
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q5) AS Excellents FROM QuestionForm WHERE q5 = 'Excellent'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Excellents * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q5Excellent = (decimal)command.ExecuteScalar();
 
-                    // Output the result
-                    Label21.Text = "Question 5 Excellent &#128515; : " + q5Excellent;
-                }
-                // Execute the SQL query
-                using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q5) AS Goods FROM QuestionForm WHERE q5 = 'Good'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Goods * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
-                {
-                    q5Good = (decimal)command.ExecuteScalar();
+                //    // Output the result
+                //    Label21.Text = q5Excellent.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q5) AS Goods FROM QuestionForm WHERE q5 = 'Good'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Goods * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q5Good = (decimal)command.ExecuteScalar();
 
-                    // Output the result
-                    Label22.Text = "Question 5 Good &#128515; : " + q5Good;
-                }
-                // Execute the SQL query
-                using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q5) AS Neutrals FROM QuestionForm WHERE q5 = 'Neutral'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Neutrals * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
-                {
-                    q5Neutral = (decimal)command.ExecuteScalar();
+                //    // Output the result
+                //    Label22.Text = q5Good.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q5) AS Neutrals FROM QuestionForm WHERE q5 = 'Neutral'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Neutrals * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q5Neutral = (decimal)command.ExecuteScalar();
 
-                    // Output the result
-                    Label23.Text = "Question 5 Neutral &#128515; : " + q5Neutral;
-                }
-                // Execute the SQL query
-                using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q5) AS Poors FROM QuestionForm WHERE q5 = 'Poor'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Poors * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
-                {
-                    q5Poor = (decimal)command.ExecuteScalar();
+                //    // Output the result
+                //    Label23.Text = q5Neutral.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q5) AS Poors FROM QuestionForm WHERE q5 = 'Poor'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Poors * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q5Poor = (decimal)command.ExecuteScalar();
 
-                    // Output the result
-                    Label24.Text = "Question 5 Poor &#128515; : " + q5Poor;
-                }
-                using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q5) AS Disappointeds FROM QuestionForm WHERE q5 = 'Disappointed'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Disappointeds * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
-                {
-                    q5Disappointed = (decimal)command.ExecuteScalar();
+                //    // Output the result
+                //    Label24.Text = q5Poor.ToString("0.0") + "%";
+                //}
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q5) AS Disappointeds FROM QuestionForm WHERE q5 = 'Disappointed'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Disappointeds * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q5Disappointed = (decimal)command.ExecuteScalar();
 
-                    // Output the result
-                    Label25.Text = "Question 5 Disappointed &#128515; : " + q5Disappointed;
-                }
+                //    // Output the result
+                //    Label25.Text = q5Disappointed.ToString("0.0") + "%";
+                //}
 
 
-                //Question 6
+                ////Question 6
 
-                // Execute the SQL query
-                using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q6) AS Excellents FROM QuestionForm WHERE q6 = 'Excellent'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Excellents * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
-                {
-                    q6Excellent = (decimal)command.ExecuteScalar();
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q6) AS Excellents FROM QuestionForm WHERE q6 = 'Excellent'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Excellents * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q6Excellent = (decimal)command.ExecuteScalar();
 
-                    // Output the result
-                    Label26.Text = "Question 6 Excellent &#128515; : " + q6Excellent;
-                }
-                // Execute the SQL query
-                using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q6) AS Goods FROM QuestionForm WHERE q6 = 'Good'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Goods * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
-                {
-                    q6Good = (decimal)command.ExecuteScalar();
+                //    // Output the result
+                //    Label26.Text = q6Excellent.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q6) AS Goods FROM QuestionForm WHERE q6 = 'Good'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Goods * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q6Good = (decimal)command.ExecuteScalar();
 
-                    // Output the result
-                    Label27.Text = "Question 6 Good &#128515; : " + q6Good;
-                }
-                // Execute the SQL query
-                using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q6) AS Neutrals FROM QuestionForm WHERE q6 = 'Neutral'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Neutrals * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
-                {
-                    q6Neutral = (decimal)command.ExecuteScalar();
+                //    // Output the result
+                //    Label27.Text = q6Good.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q6) AS Neutrals FROM QuestionForm WHERE q6 = 'Neutral'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Neutrals * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q6Neutral = (decimal)command.ExecuteScalar();
 
-                    // Output the result
-                    Label28.Text = "Question 6 Neutral &#128515; : " + q6Neutral;
-                }
-                // Execute the SQL query
-                using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q6) AS Poors FROM QuestionForm WHERE q6 = 'Poor'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Poors * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
-                {
-                    q6Poor = (decimal)command.ExecuteScalar();
+                //    // Output the result
+                //    Label28.Text = q6Neutral.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q6) AS Poors FROM QuestionForm WHERE q6 = 'Poor'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Poors * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q6Poor = (decimal)command.ExecuteScalar();
 
-                    // Output the result
-                    Label29.Text = "Question 6 Poor &#128515; : " + q6Poor;
-                }
-                using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q6) AS Disappointeds FROM QuestionForm WHERE q6 = 'Disappointed'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Disappointeds * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
-                {
-                    q6Disappointed = (decimal)command.ExecuteScalar();
+                //    // Output the result
+                //    Label29.Text = q6Poor.ToString("0.0") + "%";
+                //}
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q6) AS Disappointeds FROM QuestionForm WHERE q6 = 'Disappointed'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Disappointeds * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q6Disappointed = (decimal)command.ExecuteScalar();
 
-                    // Output the result
-                    Label30.Text = "Question 6 Disappointed &#128515; : " + q6Disappointed;
-                }
+                //    // Output the result
+                //    Label30.Text = q6Disappointed.ToString("0.0") + "%";
+                //}
+
+                ////Question 7
+
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q7) AS Excellents FROM QuestionForm WHERE q7 = 'Excellent'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Excellents * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q7Excellent = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label26.Text = q7Excellent.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q7) AS Goods FROM QuestionForm WHERE q7 = 'Good'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Goods * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q7Good = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label27.Text = q7Good.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q7) AS Neutrals FROM QuestionForm WHERE q7 = 'Neutral'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Neutrals * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q7Neutral = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label28.Text = q7Neutral.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q7) AS Poors FROM QuestionForm WHERE q7 = 'Poor'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Poors * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q7Poor = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label29.Text = q7Poor.ToString("0.0") + "%";
+                //}
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q7) AS Disappointeds FROM QuestionForm WHERE q7 = 'Disappointed'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Disappointeds * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q7Disappointed = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label30.Text = q7Disappointed.ToString("0.0") + "%";
+                //}
+
+                ////Question 8
+
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q8) AS Excellents FROM QuestionForm WHERE q8 = 'Excellent'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Excellents * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q8Excellent = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label26.Text = q8Excellent.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q8) AS Goods FROM QuestionForm WHERE q8 = 'Good'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Goods * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q8Good = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label27.Text = q8Good.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q8) AS Neutrals FROM QuestionForm WHERE q8 = 'Neutral'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Neutrals * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q8Neutral = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label28.Text = q8Neutral.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q8) AS Poors FROM QuestionForm WHERE q8 = 'Poor'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Poors * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q8Poor = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label29.Text = q8Poor.ToString("0.0") + "%";
+                //}
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q68 AS Disappointeds FROM QuestionForm WHERE q8 = 'Disappointed'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Disappointeds * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q8Disappointed = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label30.Text = q8Disappointed.ToString("0.0") + "%";
+                //}
+
+                ////Question 9
+
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q9) AS Excellents FROM QuestionForm WHERE q9 = 'Excellent'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Excellents * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q9Excellent = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label26.Text = q9Excellent.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q9) AS Goods FROM QuestionForm WHERE q9 = 'Good'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Goods * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q9Good = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label27.Text = q9Good.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q9) AS Neutrals FROM QuestionForm WHERE q9 = 'Neutral'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Neutrals * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q9Neutral = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label28.Text = q9Neutral.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q9) AS Poors FROM QuestionForm WHERE q9 = 'Poor'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Poors * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q9Poor = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label29.Text = q9Poor.ToString("0.0") + "%";
+                //}
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q9) AS Disappointeds FROM QuestionForm WHERE q9 = 'Disappointed'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Disappointeds * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q9Disappointed = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label30.Text = q9Disappointed.ToString("0.0") + "%";
+                //}
+
+
+                ////Question 10
+
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q10) AS Excellents FROM QuestionForm WHERE q10 = 'Excellent'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Excellents * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q10Excellent = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label26.Text = q10Excellent.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q10) AS Goods FROM QuestionForm WHERE q10 = 'Good'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Goods * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q10Good = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label27.Text = q10Good.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q10) AS Neutrals FROM QuestionForm WHERE q10 = 'Neutral'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Neutrals * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q10Neutral = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label28.Text = q10Neutral.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q10) AS Poors FROM QuestionForm WHERE q10 = 'Poor'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Poors * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q10Poor = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label29.Text = q10Poor.ToString("0.0") + "%";
+                //}
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q10) AS Disappointeds FROM QuestionForm WHERE q10 = 'Disappointed'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Disappointeds * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q10Disappointed = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label30.Text = q10Disappointed.ToString("0.0") + "%";
+                //}
+
+
+                ////Question 11
+
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q11) AS Excellents FROM QuestionForm WHERE q11 = 'Excellent'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Excellents * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q11Excellent = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label26.Text = q11Excellent.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q11) AS Goods FROM QuestionForm WHERE q11 = 'Good'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Goods * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q11Good = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label27.Text = q11Good.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q11) AS Neutrals FROM QuestionForm WHERE q11 = 'Neutral'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Neutrals * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q11Neutral = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label28.Text = q11Neutral.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q11) AS Poors FROM QuestionForm WHERE q11 = 'Poor'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Poors * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q11Poor = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label29.Text = q11Poor.ToString("0.0") + "%";
+                //}
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q11) AS Disappointeds FROM QuestionForm WHERE q11 = 'Disappointed'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Disappointeds * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q11Disappointed = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label30.Text = q11Disappointed.ToString("0.0") + "%";
+                //}
+
+                ////Question 12
+
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q12) AS Excellents FROM QuestionForm WHERE q12 = 'Excellent'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Excellents * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q12Excellent = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label26.Text = q12Excellent.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q12) AS Goods FROM QuestionForm WHERE q12 = 'Good'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Goods * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q12Good = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label27.Text = q12Good.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q12) AS Neutrals FROM QuestionForm WHERE q12 = 'Neutral'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Neutrals * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q12Neutral = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label28.Text = q12Neutral.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q12) AS Poors FROM QuestionForm WHERE q12 = 'Poor'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Poors * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q12Poor = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label29.Text = q12Poor.ToString("0.0") + "%";
+                //}
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q12) AS Disappointeds FROM QuestionForm WHERE q12 = 'Disappointed'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Disappointeds * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q12Disappointed = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label30.Text = q12Disappointed.ToString("0.0") + "%";
+                //}
+
+
+                ////Question 13
+
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q13) AS Excellents FROM QuestionForm WHERE q13 = 'Excellent'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Excellents * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q13Excellent = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label26.Text = q13Excellent.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q13) AS Goods FROM QuestionForm WHERE q13 = 'Good'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Goods * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q13Good = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label27.Text = q13Good.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q13) AS Neutrals FROM QuestionForm WHERE q13 = 'Neutral'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Neutrals * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q13Neutral = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label28.Text = q13Neutral.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q13) AS Poors FROM QuestionForm WHERE q13 = 'Poor'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Poors * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q13Poor = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label29.Text = q13Poor.ToString("0.0") + "%";
+                //}
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q13) AS Disappointeds FROM QuestionForm WHERE q13 = 'Disappointed'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Disappointeds * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q13Disappointed = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label30.Text = q13Disappointed.ToString("0.0") + "%";
+                //}
+
+
+                ////Question 14
+
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q14) AS Excellents FROM QuestionForm WHERE q14 = 'Excellent'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Excellents * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q14Excellent = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label26.Text = q14Excellent.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q14) AS Goods FROM QuestionForm WHERE q14 = 'Good'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Goods * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q14Good = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label27.Text = q14Good.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q14) AS Neutrals FROM QuestionForm WHERE q14 = 'Neutral'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Neutrals * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q14Neutral = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label28.Text = q14Neutral.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q14) AS Poors FROM QuestionForm WHERE q14 = 'Poor'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Poors * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q14Poor = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label29.Text = q14Poor.ToString("0.0") + "%";
+                //}
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q14) AS Disappointeds FROM QuestionForm WHERE q14 = 'Disappointed'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Disappointeds * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q14Disappointed = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label30.Text = q14Disappointed.ToString("0.0") + "%";
+                //}
+
+
+                ////Question 15
+
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q15) AS Excellents FROM QuestionForm WHERE q15 = 'Excellent'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Excellents * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q15Excellent = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label26.Text = q15Excellent.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q15) AS Goods FROM QuestionForm WHERE q15 = 'Good'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Goods * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q15Good = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label27.Text = q15Good.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q15) AS Neutrals FROM QuestionForm WHERE q15 = 'Neutral'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Neutrals * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q15Neutral = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label28.Text = q15Neutral.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q15) AS Poors FROM QuestionForm WHERE q15 = 'Poor'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Poors * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q15Poor = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label29.Text = q15Poor.ToString("0.0") + "%";
+                //}
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q15) AS Disappointeds FROM QuestionForm WHERE q15 = 'Disappointed'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Disappointeds * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q15Disappointed = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label30.Text = q15Disappointed.ToString("0.0") + "%";
+                //}
+
+
+                ////Question 16
+
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q16) AS Excellents FROM QuestionForm WHERE q16 = 'Excellent'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Excellents * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q16Excellent = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label26.Text = q16Excellent.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q16) AS Goods FROM QuestionForm WHERE q16 = 'Good'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Goods * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q16Good = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label27.Text = q16Good.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q16) AS Neutrals FROM QuestionForm WHERE q16 = 'Neutral'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Neutrals * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q16Neutral = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label28.Text = q16Neutral.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q16) AS Poors FROM QuestionForm WHERE q16 = 'Poor'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Poors * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q16Poor = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label29.Text = q16Poor.ToString("0.0") + "%";
+                //}
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q16) AS Disappointeds FROM QuestionForm WHERE q16 = 'Disappointed'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Disappointeds * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q16Disappointed = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label30.Text = q16Disappointed.ToString("0.0") + "%";
+                //}
+
+
+                ////Question 17
+
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q17) AS Excellents FROM QuestionForm WHERE q17 = 'Excellent'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Excellents * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q17Excellent = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label26.Text = q17Excellent.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q17) AS Goods FROM QuestionForm WHERE q17 = 'Good'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Goods * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q17Good = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label27.Text = q17Good.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q17) AS Neutrals FROM QuestionForm WHERE q17 = 'Neutral'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Neutrals * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q17Neutral = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label28.Text = q17Neutral.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q17) AS Poors FROM QuestionForm WHERE q17 = 'Poor'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Poors * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q17Poor = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label29.Text = q17Poor.ToString("0.0") + "%";
+                //}
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q17) AS Disappointeds FROM QuestionForm WHERE q17 = 'Disappointed'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Disappointeds * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q17Disappointed = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label30.Text = q17Disappointed.ToString("0.0") + "%";
+                //}
+
+
+                ////Question 18
+
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q18) AS Excellents FROM QuestionForm WHERE q18 = 'Excellent'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Excellents * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q18Excellent = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label26.Text = q18Excellent.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q18) AS Goods FROM QuestionForm WHERE q18 = 'Good'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Goods * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q18Good = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label27.Text = q18Good.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q18) AS Neutrals FROM QuestionForm WHERE q18 = 'Neutral'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Neutrals * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q18Neutral = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label28.Text = q18Neutral.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q18) AS Poors FROM QuestionForm WHERE q18 = 'Poor'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Poors * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q18Poor = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label29.Text = q18Poor.ToString("0.0") + "%";
+                //}
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q18) AS Disappointeds FROM QuestionForm WHERE q18 = 'Disappointed'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Disappointeds * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q18Disappointed = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label30.Text = q18Disappointed.ToString("0.0") + "%";
+                //}
+
+
+                ////Question 19
+
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q19) AS Excellents FROM QuestionForm WHERE q19 = 'Excellent'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Excellents * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q19Excellent = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label26.Text = q19Excellent.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q19) AS Goods FROM QuestionForm WHERE q19 = 'Good'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Goods * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q19Good = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label27.Text = q19Good.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q19) AS Neutrals FROM QuestionForm WHERE q19 = 'Neutral'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Neutrals * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q19Neutral = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label28.Text = q19Neutral.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q19) AS Poors FROM QuestionForm WHERE q19 = 'Poor'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Poors * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q19Poor = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label29.Text = q19Poor.ToString("0.0") + "%";
+                //}
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q19) AS Disappointeds FROM QuestionForm WHERE q19 = 'Disappointed'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Disappointeds * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q19Disappointed = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label30.Text = q19Disappointed.ToString("0.0") + "%";
+                //}
+
+
+                ////Question 20
+
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q20) AS Excellents FROM QuestionForm WHERE q20 = 'Excellent'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Excellents * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q20Excellent = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label26.Text = q20Excellent.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q20) AS Goods FROM QuestionForm WHERE q20 = 'Good'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Goods * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q20Good = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label27.Text = q20Good.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q20) AS Neutrals FROM QuestionForm WHERE q20 = 'Neutral'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Neutrals * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q20Neutral = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label28.Text = q20Neutral.ToString("0.0") + "%";
+                //}
+                //// Execute the SQL query
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q20) AS Poors FROM QuestionForm WHERE q20 = 'Poor'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Poors * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q20Poor = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label29.Text = q20Poor.ToString("0.0") + "%";
+                //}
+                //using (SqlCommand command = new SqlCommand("WITH cte AS (SELECT COUNT(q20) AS Disappointeds FROM QuestionForm WHERE q20 = 'Disappointed'),total AS(SELECT COUNT(*)AS TotalCount FROM QuestionForm) SELECT Disappointeds * 100.0 / TotalCount AS PercentageGoods FROM cte,total", connection))
+                //{
+                //    q20Disappointed = (decimal)command.ExecuteScalar();
+
+                //    // Output the result
+                //    Label30.Text = q20Disappointed.ToString("0.0") + "%";
+                //}
             }
         }
     }
