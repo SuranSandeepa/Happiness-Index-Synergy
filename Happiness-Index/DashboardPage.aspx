@@ -10,7 +10,7 @@
         }
 
         .cardView {
-            background-color: #f5f5f5;
+            /*background-color: #f5f5f5;*/
             box-shadow: 1px 1px 1px #888;
         }
 
@@ -19,6 +19,31 @@
                 color: white;
                 box-shadow: 3px 3px 3px #888;
                 transition-duration: all 0.2s;
+            }
+
+            .e{
+                background-color:#666683;
+                color:white;
+            }
+
+            .g{
+                background-color:#b69243;
+                color:white;
+            }
+            
+            .n{
+                background-color:#c97d8d;
+                color:white;
+            }
+
+            .p{
+                background-color:#d44545;
+                color:white;
+            }
+
+            .d{
+                background-color:#94bbe9;
+                color:white;
             }
     </style>
 
@@ -34,7 +59,7 @@
             <p class="fw-semibold">1.ඔබට ලැබෙන වැටුප ඔබට ජිවත් වීම සදහා ප්‍රමාණවත්ද ?</p>
             <div class="row p-2 text-center">
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView e">
                         <div class="card-header">Question 1</div>
                         <div class="card-body">Excellent &#128512; </div>
                         <div class="card-footer">
@@ -43,7 +68,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView g">
                         <div class="card-header">Question 1</div>
                         <div class="card-body">Good &#128578; </div>
                         <div class="card-footer">
@@ -52,7 +77,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView n">
                         <div class="card-header">Question 1</div>
                         <div class="card-body">Neutral &#128528; </div>
                         <div class="card-footer">
@@ -61,7 +86,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView p">
                         <div class="card-header">Question 1</div>
                         <div class="card-body">Poor &#128543;</div>
                         <div class="card-footer">
@@ -70,7 +95,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView d">
                         <div class="card-header">Question 1</div>
                         <div class="card-body">Disappointed &#128549; </div>
                         <div class="card-footer">
@@ -84,8 +109,8 @@
 
             <p class="fw-semibold">2.පසුගිය මස අතිකාල දීමනාව පිළිබද ඔබ තෘප්තිමත්ද ?</p>
             <div class="row p-2 text-center">
-                <div class="col-sm">
-                    <div class="card cardView">
+                <div class="col-sm"> 
+                    <div class="card cardView e">
                         <div class="card-header">Question 2</div>
                         <div class="card-body">Excellent &#128512; </div>
                         <div class="card-footer">
@@ -94,7 +119,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView g">
                         <div class="card-header">Question 2</div>
                         <div class="card-body">Good &#128578; </div>
                         <div class="card-footer">
@@ -103,7 +128,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView n">
                         <div class="card-header">Question 2</div>
                         <div class="card-body">Neutral &#128528; </div>
                         <div class="card-footer">
@@ -112,7 +137,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView p">
                         <div class="card-header">Question 2</div>
                         <div class="card-body">Poor &#128543; </div>
                         <div class="card-footer">
@@ -121,7 +146,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView d">
                         <div class="card-header">Question 2</div>
                         <div class="card-body">Disappointed &#128549; </div>
                         <div class="card-footer">
@@ -136,7 +161,7 @@
             <p class="fw-semibold">3.පසුගිය මස නිෂ්පාදන දිරිදීමනාව ලෙස ඔබට ලැබුණු මුදල් ප්‍රමාණය පිළිබද ඔබ තෘප්තිමත්ද ?</p>
             <div class="row p-2 text-center">
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView e">
                         <div class="card-header">Question 3</div>
                         <div class="card-body">Excellent &#128512; </div>
                         <div class="card-footer">
@@ -145,7 +170,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView g">
                         <div class="card-header">Question 3</div>
                         <div class="card-body">Good &#128578; </div>
                         <div class="card-footer">
@@ -154,7 +179,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView n">
                         <div class="card-header">Question 3</div>
                         <div class="card-body">Neutral &#128528; </div>
                         <div class="card-footer">
@@ -163,7 +188,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView p">
                         <div class="card-header">Question 3</div>
                         <div class="card-body">Poor &#128543; </div>
                         <div class="card-footer">
@@ -172,7 +197,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView d">
                         <div class="card-header">Question 3</div>
                         <div class="card-body">Disappointed &#128549; </div>
                         <div class="card-footer">
@@ -187,7 +212,7 @@
             <p class="fw-semibold">4.ආයතනයෙන් ලබා දෙන ආහාර වල රස සහ ගුණත්වය කෙබදුද ?</p>
             <div class="row p-2 text-center">
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView e">
                         <div class="card-header">Question 4</div>
                         <div class="card-body">Excellent &#128512; </div>
                         <div class="card-footer">
@@ -196,7 +221,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView g">
                         <div class="card-header">Question 4</div>
                         <div class="card-body">Good &#128578; </div>
                         <div class="card-footer">
@@ -205,7 +230,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView n">
                         <div class="card-header">Question 4</div>
                         <div class="card-body">Neutral &#128528; </div>
                         <div class="card-footer">
@@ -214,7 +239,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView p">
                         <div class="card-header">Question 4</div>
                         <div class="card-body">Poor &#128543; </div>
                         <div class="card-footer">
@@ -223,7 +248,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView d">
                         <div class="card-header">Question 4</div>
                         <div class="card-body">Disappointed &#128549; </div>
                         <div class="card-footer">
@@ -239,7 +264,7 @@
             <p class="fw-semibold">5.ආයතනයෙන් ලබා දෙන ආහාර ප්‍රමාණය ඔබට ප්‍රමාණවත්ද ?</p>
             <div class="row p-2 text-center">
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView e">
                         <div class="card-header">Question 5</div>
                         <div class="card-body">Excellent &#128512; </div>
                         <div class="card-footer">
@@ -248,7 +273,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView g">
                         <div class="card-header">Question 5</div>
                         <div class="card-body">Good &#128578; </div>
                         <div class="card-footer">
@@ -257,7 +282,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView n">
                         <div class="card-header">Question 5</div>
                         <div class="card-body">Neutral &#128528; </div>
                         <div class="card-footer">
@@ -266,7 +291,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView p">
                         <div class="card-header">Question 5</div>
                         <div class="card-body">Poor &#128543; </div>
                         <div class="card-footer">
@@ -275,7 +300,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView d">
                         <div class="card-header">Question 5</div>
                         <div class="card-body">Disappointed &#128549; </div>
                         <div class="card-footer">
@@ -290,7 +315,7 @@
             <p class="fw-semibold">6.බස් රථ ප්‍රවාහන පහසුකම් සහ එහි ආරක්ෂාව පිළිබද ඔබගේ අදහස ?</p>
             <div class="row p-2 text-center">
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView e">
                         <div class="card-header">Question 6</div>
                         <div class="card-body">Excellent &#128512; </div>
                         <div class="card-footer">
@@ -299,7 +324,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView g">
                         <div class="card-header">Question 6</div>
                         <div class="card-body">Good &#128578; </div>
                         <div class="card-footer">
@@ -308,7 +333,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView n">
                         <div class="card-header">Question 6</div>
                         <div class="card-body">Neutral &#128528; </div>
                         <div class="card-footer">
@@ -317,7 +342,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView p">
                         <div class="card-header">Question 6</div>
                         <div class="card-body">Poor &#128543; </div>
                         <div class="card-footer">
@@ -326,7 +351,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView d">
                         <div class="card-header">Question 6</div>
                         <div class="card-body">Disappointed &#128549; </div>
                         <div class="card-footer">
@@ -341,7 +366,7 @@
             <p class="fw-semibold">7.වෑන් රථ ප්‍රවාහන පහසුකම් සහ එහි ආරක්ෂාව පිළිබද ඔබගේ අදහස ?</p>
             <div class="row p-2 text-center">
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView e">
                         <div class="card-header">Question 7</div>
                         <div class="card-body">Excellent &#128512; </div>
                         <div class="card-footer">
@@ -350,7 +375,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView g">
                         <div class="card-header">Question 7</div>
                         <div class="card-body">Good &#128578; </div>
                         <div class="card-footer">
@@ -359,7 +384,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView n">
                         <div class="card-header">Question 7</div>
                         <div class="card-body">Neutral &#128528; </div>
                         <div class="card-footer">
@@ -368,7 +393,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView p">
                         <div class="card-header">Question 7</div>
                         <div class="card-body">Poor &#128543; </div>
                         <div class="card-footer">
@@ -377,7 +402,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView d">
                         <div class="card-header">Question 7</div>
                         <div class="card-body">Disappointed &#128549; </div>
                         <div class="card-footer">
@@ -392,7 +417,7 @@
             <p class="fw-semibold">8.ඔබගේ මානසික සෞඛ්‍ය මට්ටම කෙබදුද ?</p>
             <div class="row p-2 text-center">
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView e">
                         <div class="card-header">Question 8</div>
                         <div class="card-body">Excellent &#128512; </div>
                         <div class="card-footer">
@@ -401,7 +426,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView g">
                         <div class="card-header">Question 8</div>
                         <div class="card-body">Good &#128578; </div>
                         <div class="card-footer">
@@ -410,7 +435,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView n">
                         <div class="card-header">Question 8</div>
                         <div class="card-body">Neutral &#128528; </div>
                         <div class="card-footer">
@@ -419,7 +444,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView p">
                         <div class="card-header">Question 8</div>
                         <div class="card-body">Poor &#128543; </div>
                         <div class="card-footer">
@@ -428,7 +453,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView d">
                         <div class="card-header">Question 8</div>
                         <div class="card-body">Disappointed &#128549; </div>
                         <div class="card-footer">
@@ -443,7 +468,7 @@
             <p class="fw-semibold">9.වෛද්‍ය මද්‍යස්ථාන මගින් ඔබට ලැබෙන සේවය පිළිබද ඔබ තෘප්තිමත්ද ?</p>
             <div class="row p-2 text-center">
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView e">
                         <div class="card-header">Question 9</div>
                         <div class="card-body">Excellent &#128512; </div>
                         <div class="card-footer">
@@ -452,7 +477,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView g">
                         <div class="card-header">Question 9</div>
                         <div class="card-body">Good &#128578; </div>
                         <div class="card-footer">
@@ -461,7 +486,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView n">
                         <div class="card-header">Question 9</div>
                         <div class="card-body">Neutral &#128528; </div>
                         <div class="card-footer">
@@ -470,7 +495,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView p">
                         <div class="card-header">Question 9</div>
                         <div class="card-body">Poor &#128543; </div>
                         <div class="card-footer">
@@ -479,7 +504,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView d">
                         <div class="card-header">Question 9</div>
                         <div class="card-body">Disappointed &#128549; </div>
                         <div class="card-footer">
@@ -494,7 +519,7 @@
             <p class="fw-semibold">10.ආයතනයේ වැඩ පරිසරයේ ආරක්ෂාව පිළිබද ඔබගේ අදහස ?</p>
             <div class="row p-2 text-center">
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView e">
                         <div class="card-header">Question 10</div>
                         <div class="card-body">Excellent &#128512; </div>
                         <div class="card-footer">
@@ -503,7 +528,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView g">
                         <div class="card-header">Question 10</div>
                         <div class="card-body">Good &#128578; </div>
                         <div class="card-footer">
@@ -512,7 +537,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView n">
                         <div class="card-header">Question 10</div>
                         <div class="card-body">Neutral &#128528; </div>
                         <div class="card-footer">
@@ -521,7 +546,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView p">
                         <div class="card-header">Question 10</div>
                         <div class="card-body">Poor &#128543; </div>
                         <div class="card-footer">
@@ -530,7 +555,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView d">
                         <div class="card-header">Question 10</div>
                         <div class="card-body">Disappointed &#128549; </div>
                         <div class="card-footer">
@@ -545,7 +570,7 @@
             <p class="fw-semibold">11.ඔබට හොද නින්දක් ලැබෙනවාද ?</p>
             <div class="row p-2 text-center">
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView e">
                         <div class="card-header">Question 11</div>
                         <div class="card-body">Excellent &#128512; </div>
                         <div class="card-footer">
@@ -554,7 +579,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView g">
                         <div class="card-header">Question 11</div>
                         <div class="card-body">Good &#128578; </div>
                         <div class="card-footer">
@@ -563,7 +588,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView n">
                         <div class="card-header">Question 11</div>
                         <div class="card-body">Neutral &#128528; </div>
                         <div class="card-footer">
@@ -572,7 +597,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView p">
                         <div class="card-header">Question 11</div>
                         <div class="card-body">Poor &#128543; </div>
                         <div class="card-footer">
@@ -581,7 +606,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView d">
                         <div class="card-header">Question 11</div>
                         <div class="card-body">Disappointed &#128549; </div>
                         <div class="card-footer">
@@ -596,7 +621,7 @@
             <p class="fw-semibold">12.ඔබට ඔබගේ පවුල සමග ගත කිරීමට ලැබෙන වේලාව කෙබදුද ?</p>
             <div class="row p-2 text-center">
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView e">
                         <div class="card-header">Question 12</div>
                         <div class="card-body">Excellent &#128512; </div>
                         <div class="card-footer">
@@ -605,7 +630,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView g">
                         <div class="card-header">Question 12</div>
                         <div class="card-body">Good &#128578; </div>
                         <div class="card-footer">
@@ -614,7 +639,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView n">
                         <div class="card-header">Question 12</div>
                         <div class="card-body">Neutral &#128528; </div>
                         <div class="card-footer">
@@ -623,7 +648,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView p">
                         <div class="card-header">Question 12</div>
                         <div class="card-body">Poor &#128543; </div>
                         <div class="card-footer">
@@ -632,7 +657,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView d">
                         <div class="card-header">Question 12</div>
                         <div class="card-body">Disappointed &#128549; </div>
                         <div class="card-footer">
@@ -647,7 +672,7 @@
             <p class="fw-semibold">13.ආයතනය තුල ඔබට යහළුවන් සිටිනවාද ?</p>
             <div class="row p-2 text-center">
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView e">
                         <div class="card-header">Question 13</div>
                         <div class="card-body">Excellent &#128512; </div>
                         <div class="card-footer">
@@ -656,7 +681,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView g">
                         <div class="card-header">Question 13</div>
                         <div class="card-body">Good &#128578; </div>
                         <div class="card-footer">
@@ -664,8 +689,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm">
-                    <div class="card cardView">
+                <div class="col-sm"> 
+                    <div class="card cardView n">
                         <div class="card-header">Question 13</div>
                         <div class="card-body">Neutral &#128528; </div>
                         <div class="card-footer">
@@ -674,7 +699,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView p">
                         <div class="card-header">Question 13</div>
                         <div class="card-body">Poor &#128543; </div>
                         <div class="card-footer">
@@ -683,7 +708,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView d">
                         <div class="card-header">Question 13</div>
                         <div class="card-body">Disappointed &#128549; </div>
                         <div class="card-footer">
@@ -698,7 +723,7 @@
             <p class="fw-semibold">14.වැඩ කරන පැය ගණන පිළිබද ඔබගේ අදහස කෙබදුද ?</p>
             <div class="row p-2 text-center">
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView e">
                         <div class="card-header">Question 14</div>
                         <div class="card-body">Excellent &#128512; </div>
                         <div class="card-footer">
@@ -707,7 +732,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView g">
                         <div class="card-header">Question 14</div>
                         <div class="card-body">Good &#128578; </div>
                         <div class="card-footer">
@@ -716,7 +741,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView n">
                         <div class="card-header">Question 14</div>
                         <div class="card-body">Neutral &#128528; </div>
                         <div class="card-footer">
@@ -725,7 +750,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView p">
                         <div class="card-header">Question 14</div>
                         <div class="card-body">Poor &#128543; </div>
                         <div class="card-footer">
@@ -733,8 +758,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm">
-                    <div class="card cardView">
+                <div class="col-sm"> 
+                    <div class="card cardView d">
                         <div class="card-header">Question 14</div>
                         <div class="card-body">Disappointed &#128549; </div>
                         <div class="card-footer">
@@ -749,7 +774,7 @@
             <p class="fw-semibold">15.මනෝ විද්‍යා උපදේශකතුමියගේ සේවය පිළිබද ඔබගේ අදහස කුමක්ද ?</p>
             <div class="row p-2 text-center">
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView e">
                         <div class="card-header">Question 15</div>
                         <div class="card-body">Excellent &#128512; </div>
                         <div class="card-footer">
@@ -758,7 +783,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView g">
                         <div class="card-header">Question 15</div>
                         <div class="card-body">Good &#128578; </div>
                         <div class="card-footer">
@@ -767,7 +792,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView n">
                         <div class="card-header">Question 15</div>
                         <div class="card-body">Neutral &#128528; </div>
                         <div class="card-footer">
@@ -776,7 +801,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView p">
                         <div class="card-header">Question 15</div>
                         <div class="card-body">Poor &#128543; </div>
                         <div class="card-footer">
@@ -785,7 +810,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView d">
                         <div class="card-header">Question 15</div>
                         <div class="card-body">Disappointed &#128549; </div>
                         <div class="card-footer">
@@ -800,7 +825,7 @@
             <p class="fw-semibold">16.ඔබගේ රැකියාව සම්බන්දව ඔබට ලැබෙන පුහුණුවීම් ප්‍රමාණවත්ද ?</p>
             <div class="row p-2 text-center">
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView e">
                         <div class="card-header">Question 16</div>
                         <div class="card-body">Excellent &#128512; </div>
                         <div class="card-footer">
@@ -809,7 +834,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView g">
                         <div class="card-header">Question 16</div>
                         <div class="card-body">Good &#128578; </div>
                         <div class="card-footer">
@@ -818,7 +843,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView n">
                         <div class="card-header">Question 16</div>
                         <div class="card-body">Neutral &#128528; </div>
                         <div class="card-footer">
@@ -827,7 +852,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView p">
                         <div class="card-header">Question 16</div>
                         <div class="card-body">Poor &#128543; </div>
                         <div class="card-footer">
@@ -836,7 +861,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView d">
                         <div class="card-header">Question 16</div>
                         <div class="card-body">Disappointed &#128549; </div>
                         <div class="card-footer">
@@ -851,7 +876,7 @@
             <p class="fw-semibold">17.ඔබගේ රැකියාවට අමතරව ඔබගේ හැකියාවන් වර්ධනයට ලැබෙන පුහුණුවීම් ප්‍රමාණවත්ද ?</p>
             <div class="row p-2 text-center">
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView e">
                         <div class="card-header">Question 17</div>
                         <div class="card-body">Excellent &#128512; </div>
                         <div class="card-footer">
@@ -860,7 +885,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView g">
                         <div class="card-header">Question 17</div>
                         <div class="card-body">Good &#128578; </div>
                         <div class="card-footer">
@@ -869,7 +894,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView n">
                         <div class="card-header">Question 17</div>
                         <div class="card-body">Neutral &#128528; </div>
                         <div class="card-footer">
@@ -878,7 +903,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView p">
                         <div class="card-header">Question 17</div>
                         <div class="card-body">Poor &#128543; </div>
                         <div class="card-footer">
@@ -887,7 +912,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView d">
                         <div class="card-header">Question 17</div>
                         <div class="card-body">Disappointed &#128549; </div>
                         <div class="card-footer">
@@ -902,7 +927,7 @@
             <p class="fw-semibold">18.පුහුණු උපදේශිකාවන් පිළිබද ඔබගේ අදහස ?</p>
             <div class="row p-2 text-center">
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView e">
                         <div class="card-header">Question 18</div>
                         <div class="card-body">Excellent &#128512; </div>
                         <div class="card-footer">
@@ -911,7 +936,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView g">
                         <div class="card-header">Question 18</div>
                         <div class="card-body">Good &#128578; </div>
                         <div class="card-footer">
@@ -920,7 +945,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView n">
                         <div class="card-header">Question 18</div>
                         <div class="card-body">Neutral &#128528; </div>
                         <div class="card-footer">
@@ -929,7 +954,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView p">
                         <div class="card-header">Question 18</div>
                         <div class="card-body">Poor &#128543; </div>
                         <div class="card-footer">
@@ -938,7 +963,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView d">
                         <div class="card-header">Question 18</div>
                         <div class="card-body">Disappointed &#128549; </div>
                         <div class="card-footer">
@@ -953,7 +978,7 @@
             <p class="fw-semibold">19.කලමනාකරිත්වය තුලින් ඔබට ලැබෙන සහයෝගය ප්‍රමාණවත්ද ?</p>
             <div class="row p-2 text-center">
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView e">
                         <div class="card-header">Question 19</div>
                         <div class="card-body">Excellent &#128512; </div>
                         <div class="card-footer">
@@ -962,7 +987,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView g">
                         <div class="card-header">Question 19</div>
                         <div class="card-body">Good &#128578; </div>
                         <div class="card-footer">
@@ -971,7 +996,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView n">
                         <div class="card-header">Question 19</div>
                         <div class="card-body">Neutral &#128528; </div>
                         <div class="card-footer">
@@ -980,7 +1005,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView p">
                         <div class="card-header">Question 19</div>
                         <div class="card-body">Poor &#128543; </div>
                         <div class="card-footer">
@@ -989,7 +1014,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView d">
                         <div class="card-header">Question 19</div>
                         <div class="card-body">Disappointed &#128549; </div>
                         <div class="card-footer">
@@ -1004,7 +1029,7 @@
             <p class="fw-semibold">20.සමූහ කණ්ඩායම් නායකයින් තුලින් ඔබට ලැබෙන සහයෝගය ප්‍රමාණවත්ද ?</p>
             <div class="row p-2 text-center">
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView e">
                         <div class="card-header">Question 20</div>
                         <div class="card-body">Excellent &#128512; </div>
                         <div class="card-footer">
@@ -1013,7 +1038,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView g">
                         <div class="card-header">Question 20</div>
                         <div class="card-body">Good &#128578; </div>
                         <div class="card-footer">
@@ -1022,7 +1047,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView n">
                         <div class="card-header">Question 20</div>
                         <div class="card-body">Neutral &#128528; </div>
                         <div class="card-footer">
@@ -1031,7 +1056,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView p">
                         <div class="card-header">Question 20</div>
                         <div class="card-body">Poor &#128543; </div>
                         <div class="card-footer">
@@ -1040,7 +1065,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView d">
                         <div class="card-header">Question 20</div>
                         <div class="card-body">Disappointed &#128549; </div>
                         <div class="card-footer">
@@ -1055,7 +1080,7 @@
             <p class="fw-semibold">21.කණ්ඩායම් නායකයින් තුලින් ඔබට ලැබෙන සහයෝගය ප්‍රමාණවත්ද ?</p>
             <div class="row p-2 text-center">
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView e">
                         <div class="card-header">Question 21</div>
                         <div class="card-body">Excellent &#128512; </div>
                         <div class="card-footer">
@@ -1064,7 +1089,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView g">
                         <div class="card-header">Question 21</div>
                         <div class="card-body">Good &#128578; </div>
                         <div class="card-footer">
@@ -1073,7 +1098,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView n">
                         <div class="card-header">Question 21</div>
                         <div class="card-body">Neutral &#128528; </div>
                         <div class="card-footer">
@@ -1082,7 +1107,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView p">
                         <div class="card-header">Question 21</div>
                         <div class="card-body">Poor &#128543; </div>
                         <div class="card-footer">
@@ -1091,7 +1116,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView d">
                         <div class="card-header">Question 21</div>
                         <div class="card-body">Disappointed &#128549; </div>
                         <div class="card-footer">
@@ -1106,7 +1131,7 @@
             <p class="fw-semibold">22.සමානාත්මතාව සහ ගෞරවය රැකෙන පරිදි ඔබගේ උසස් නිලධාරීන් කටයුතු කරනවාද ?</p>
             <div class="row p-2 text-center">
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView e">
                         <div class="card-header">Question 22</div>
                         <div class="card-body">Excellent &#128512; </div>
                         <div class="card-footer">
@@ -1115,7 +1140,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView g">
                         <div class="card-header">Question 22</div>
                         <div class="card-body">Good &#128578; </div>
                         <div class="card-footer">
@@ -1124,7 +1149,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView n">
                         <div class="card-header">Question 22</div>
                         <div class="card-body">Neutral &#128528; </div>
                         <div class="card-footer">
@@ -1133,7 +1158,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView p">
                         <div class="card-header">Question 22</div>
                         <div class="card-body">Poor &#128543; </div>
                         <div class="card-footer">
@@ -1142,7 +1167,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView d">
                         <div class="card-header">Question 22</div>
                         <div class="card-body">Disappointed &#128549; </div>
                         <div class="card-footer">
@@ -1157,7 +1182,7 @@
             <p class="fw-semibold">23.සේවා උසස් වීම් සම්බන්දව ඔබගේ අදහස ?</p>
             <div class="row p-2 text-center">
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView e">
                         <div class="card-header">Question 23</div>
                         <div class="card-body">Excellent &#128512; </div>
                         <div class="card-footer">
@@ -1166,7 +1191,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView g">
                         <div class="card-header">Question 23</div>
                         <div class="card-body">Good &#128578; </div>
                         <div class="card-footer">
@@ -1175,7 +1200,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView n">
                         <div class="card-header">Question 23</div>
                         <div class="card-body">Neutral &#128528; </div>
                         <div class="card-footer">
@@ -1184,7 +1209,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView p">
                         <div class="card-header">Question 23</div>
                         <div class="card-body">Poor &#128543; </div>
                         <div class="card-footer">
@@ -1193,7 +1218,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView d">
                         <div class="card-header">Question 23</div>
                         <div class="card-body">Disappointed &#128549; </div>
                         <div class="card-footer">
@@ -1208,7 +1233,7 @@
             <p class="fw-semibold">24.ඔබ ලබා දෙන සේවය පිළිබද  ඇගයීම සම්බන්ද ඔබගේ අදහස ?</p>
             <div class="row p-2 text-center">
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView e">
                         <div class="card-header">Question 24</div>
                         <div class="card-body">Excellent &#128512; </div>
                         <div class="card-footer">
@@ -1217,7 +1242,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView g">
                         <div class="card-header">Question 24</div>
                         <div class="card-body">Good &#128578; </div>
                         <div class="card-footer">
@@ -1226,7 +1251,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView n">
                         <div class="card-header">Question 24</div>
                         <div class="card-body">Neutral &#128528; </div>
                         <div class="card-footer">
@@ -1235,7 +1260,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView p">
                         <div class="card-header">Question 24</div>
                         <div class="card-body">Poor &#128543; </div>
                         <div class="card-footer">
@@ -1244,7 +1269,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView d">
                         <div class="card-header">Question 24</div>
                         <div class="card-body">Disappointed &#128549; </div>
                         <div class="card-footer">
@@ -1259,7 +1284,7 @@
             <p class="fw-semibold">25.ආයතනය සමග තව ඉදිරියට රැදී සිටීමට බලාපොරොත්තු වන කාලය ?</p>
             <div class="row p-2 text-center">
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView e">
                         <div class="card-header">Question 25</div>
                         <div class="card-body">Excellent &#128512; </div>
                         <div class="card-footer">
@@ -1268,7 +1293,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView g">
                         <div class="card-header">Question 25</div>
                         <div class="card-body">Good &#128578; </div>
                         <div class="card-footer">
@@ -1277,7 +1302,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView n">
                         <div class="card-header">Question 25</div>
                         <div class="card-body">Neutral &#128528; </div>
                         <div class="card-footer">
@@ -1286,7 +1311,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView p">
                         <div class="card-header">Question 25</div>
                         <div class="card-body">Poor &#128543; </div>
                         <div class="card-footer">
@@ -1295,7 +1320,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView d">
                         <div class="card-header">Question 25</div>
                         <div class="card-body">Disappointed &#128549; </div>
                         <div class="card-footer">
@@ -1310,7 +1335,7 @@
             <p class="fw-semibold">26.ඔබට  නව යෝජනාවක් හෝ නව අදහසක් ඉදිරිපත් කිරීමට ඇති හැකියාව ?</p>
             <div class="row p-2 text-center">
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView e">
                         <div class="card-header">Question 26</div>
                         <div class="card-body">Excellent &#128512; </div>
                         <div class="card-footer">
@@ -1319,7 +1344,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView g">
                         <div class="card-header">Question 26</div>
                         <div class="card-body">Good &#128578; </div>
                         <div class="card-footer">
@@ -1328,7 +1353,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView n">
                         <div class="card-header">Question 26</div>
                         <div class="card-body">Neutral &#128528; </div>
                         <div class="card-footer">
@@ -1337,7 +1362,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView p">
                         <div class="card-header">Question 26</div>
                         <div class="card-body">Poor &#128543; </div>
                         <div class="card-footer">
@@ -1346,7 +1371,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView d">
                         <div class="card-header">Question 26</div>
                         <div class="card-body">Disappointed &#128549; </div>
                         <div class="card-footer">
@@ -1361,7 +1386,7 @@
             <p class="fw-semibold">27.ඔබගේ නව අදහස් හා යෝජනා සම්බන්ද වන ඇගයීම සම්බන්ද ඔබේ අදහස ?</p>
             <div class="row p-2 text-center">
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView e">
                         <div class="card-header">Question 27</div>
                         <div class="card-body">Excellent &#128512; </div>
                         <div class="card-footer">
@@ -1370,7 +1395,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView g">
                         <div class="card-header">
                             Question 27
                         </div>
@@ -1381,7 +1406,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView n">
                         <div class="card-header">Question 27</div>
                         <div class="card-body">Neutral &#128528; </div>
                         <div class="card-footer">
@@ -1390,7 +1415,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView p">
                         <div class="card-header">Question 27</div>
                         <div class="card-body">Poor &#128543; </div>
                         <div class="card-footer">
@@ -1399,7 +1424,7 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card cardView">
+                    <div class="card cardView d">
                         <div class="card-header">Question 27</div>
                         <div class="card-body">Disappointed &#128549; </div>
                         <div class="card-footer">
