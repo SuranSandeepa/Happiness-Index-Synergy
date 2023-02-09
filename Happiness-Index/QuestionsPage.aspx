@@ -2,6 +2,11 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="CSS/Body.css" rel="stylesheet" />
+    <style>
+        .rb{
+            font-size:23px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
